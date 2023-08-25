@@ -1,0 +1,8 @@
+.banner{
+  background-image: url(https://brainstormforce.com/wp-content/uploads/2021/02/hero-section-bg.svg);
+    background-size: cover;
+    opacity: 1.5;
+    transition:3s;
+    border-radius:3s;
+    opacity:3s;
+}
