@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="hero-content flex-col lg:flex-row-reverse sm:content-start">
           <img
             src={image1}
-            className=" shadow-3xl lg:mr-[0px] sm:mr-[250px]"
+            className=" shadow-3xl lg:mr-[0px] sm:mr-[200px]"
           />
           <div className="sm:ml-[-368px] lg:ml-0">
             <h1 className="text-5xl font-bold">Live Your <br></br> Dream With Us</h1>
