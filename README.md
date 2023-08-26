@@ -11,8 +11,9 @@
 3.Capsules Search(search  by : status, original_launch, and type) <br />
 4.Capsules Card Section  <br />
 5.Card Click Show The modal and more information capsules <br />
-6.Use Pagination<br />
-7.Footer section  <br />
+6.Card and banner animation work<br />
+7.Use Pagination<br />
+8.Footer section  <br />
 
 ###### Page Screen Shot
 ![Alt text](https://i.ibb.co/Q9cS0zh/Landing-Page.png)
