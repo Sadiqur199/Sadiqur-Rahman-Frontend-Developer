@@ -1,6 +1,7 @@
 import React from "react";
 import image1 from '../../images/life@bsf-header-img.png'
 import './banner.css'
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
     <>
@@ -12,10 +13,10 @@ const Banner = () => {
           />
           <div className="sm:ml-[-368px] lg:ml-0">
             <h1 className="text-5xl font-bold">Live Your <br></br> Dream With Us</h1>
-            <p className='py-6 md:px-5 sm:px-0'>
+            <p className='py-6 sm:px-0'>
             With us, you can keep learning, growing, and <br /> doing what  you love to make your dreams come true.
             </p>
-            <button className="btn btn-primary mt-5">Join Us</button>
+            <Link to='/'><button className="btn btn-primary mt-5">Join Us</button></Link>
           </div>
         </div>
       </div>
