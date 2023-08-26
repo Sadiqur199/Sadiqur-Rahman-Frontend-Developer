@@ -32,6 +32,9 @@ const Search = () => {
       <h1 className="mt-16 mb-10 uppercase font-bold text-xl">
         Search The Capsules
       </h1>
+
+      {/* Search Input File */}
+
       <form className="" onSubmit={handleSearch}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto">
           <div className="">
@@ -42,10 +45,7 @@ const Search = () => {
             >
               <option value="">capsule Status</option>
               {capsules.map((capsule) => (
-                <option
-                  key={capsule.capsule_serial}
-                  value={capsule.status}
-                >
+                <option key={capsule.capsule_serial} value={capsule.status}>
                   {capsule.status}
                 </option>
               ))}
@@ -74,11 +74,14 @@ const Search = () => {
           </div>
         </div>
       </form>
+
+      {/* Search Result  */}
+
       <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {searchResults.map((capsule) => (
           <div
             key={capsule.capsule_serial}
-            className="card md:ml-[600px] sm:ml-[170px] w-96 p-16 bg-[#E4F3FF] shadow-xl  mx-auto"
+            className="card md:ml-[600px] mb-16 mt-10 sm:ml-[170px] w-96 p-16 bg-[#E4F3FF] shadow-xl  mx-auto"
           >
             <p className="font-semibold">
               Serial Number: {capsule.capsule_serial}

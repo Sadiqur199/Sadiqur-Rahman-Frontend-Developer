@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import { IoMdCloseCircle } from "react-icons/io";
+import { MotionAnimate } from 'react-motion-animate'
 
 const customStyles = {
   content: {
@@ -39,8 +40,15 @@ const Product = () => {
   };
 
   return (
-    <div className="container text-center p-10">
+    <div className="container text-center p-10 bg-slate-50	">
       <h1 className="mt-16 mb-10 uppercase font-bold text-xl">All Capsules</h1>
+      <MotionAnimate
+          animation='fadeInUp'
+          reset={true}
+          distance={200}
+          delay={0.2}
+          speed={1}
+      >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {currentItems.map((capsule) => (
           <div
@@ -49,16 +57,17 @@ const Product = () => {
             onClick={() => setSelectedCapsule(capsule)}
           >
             <div className="card-body">
-              <h2 className="card-title">
+              <h2 className="card-title mx-auto">
                 Serial Number: {capsule.capsule_serial}
               </h2>
-              <p>Status: {capsule.status}</p>
-              <p>Type: {capsule.type}</p>
-              <p>Original_Launch: {capsule.original_launch}</p>
+              <p className="font-semibold">Status: {capsule.status}</p>
+              <p className="font-semibold">Type: {capsule.type}</p>
+              <p className="font-semibold">Original_Launch: {capsule.original_launch ?capsule.original_launch  : 'N/A'}</p>
             </div>
           </div>
         ))}
       </div>
+      </MotionAnimate>
 
       {/* Modal Section Here */}
 
