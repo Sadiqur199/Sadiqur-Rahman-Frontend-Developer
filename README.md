@@ -15,8 +15,8 @@
 7.Use Pagination<br />
 8.Footer section  <br />
 
-###### Page Screen Shot
-![Alt text](https://i.ibb.co/Q9cS0zh/Landing-Page.png)
+<!-- ###### Page Screen Shot
+![Alt text](https://i.ibb.co/Q9cS0zh/Landing-Page.png) -->
 
 
 
