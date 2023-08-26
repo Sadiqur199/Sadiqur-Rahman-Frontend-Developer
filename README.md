@@ -20,7 +20,4 @@
 
 
 
-Live Link Is Here:
-
-- [Landing-Page](https://landingpage-199.netlify.app/) 
 
