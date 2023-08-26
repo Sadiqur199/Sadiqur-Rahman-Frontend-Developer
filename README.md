@@ -14,6 +14,11 @@
 6.Use Pagination<br />
 7.Footer section  <br />
 
+###### Page Screen Shot
+![Alt text](https://i.ibb.co/Q9cS0zh/Landing-Page.png)
+
+
+
 Live Link Is Here:
 
 - [Landing-Page](https://landingpage-199.netlify.app/) 
