@@ -14,7 +14,7 @@
 6.Use Pagination<br />
 7.Footer section  <br />
 
-Currently, two official plugins are available:
+Live Link Is Here:
 
 - [Landing-Page](https://landingpage-199.netlify.app/) 
 
