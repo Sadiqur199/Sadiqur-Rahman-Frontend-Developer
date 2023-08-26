@@ -1,8 +1,17 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# My Landing Page
+#### Technology:
+1.Use the Api Capsules
+2.use react hooks and router
+3.Use React Animation and icon
+#### Feature :
+1.Navbar Section
+2.Banner Section 
+3.Capsules Search(search  by : status, original_launch, and type)
+4.Capsules Card Section 
+5.Card Click Show The modal and more information capsules
+6.Footer section 
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Landing-Page](https://landingpage-199.netlify.app/) 
+
