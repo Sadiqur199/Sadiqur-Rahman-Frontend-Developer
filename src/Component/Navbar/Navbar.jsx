@@ -1,6 +1,6 @@
 import React from "react";
 import image1 from "../../images/brainStationForce.png";
-import image2 from '../../images/young.avif'
+import image2 from "../../images/young.avif";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
@@ -70,9 +70,7 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-400 text-black rounded-box w-52"
             >
               <li>
-                <Link className="justify-between">
-                  Login
-                </Link>
+                <Link className="justify-between">Login</Link>
               </li>
               <li>
                 <Link>Registration</Link>

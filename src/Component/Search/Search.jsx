@@ -33,7 +33,9 @@ const Search = () => {
 
   return (
     <div className="text-center">
-      <h1 className="mt-16 mb-10 uppercase font-bold text-xl">Search The Capsules</h1>
+      <h1 className="mt-16 mb-10 uppercase font-bold text-xl">
+        Search The Capsules
+      </h1>
       <form className="" onSubmit={handleSearch}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mx-auto">
           <div className="">
@@ -88,8 +90,6 @@ const Search = () => {
             <p>Status: {capsule.status}</p>
             <p>Original_launch_unix: {capsule.original_launch_unix}</p>
             <p>Details: {capsule.details}</p>
-
-            {/* Add more information you want to display */}
           </div>
         ))}
       </div>
