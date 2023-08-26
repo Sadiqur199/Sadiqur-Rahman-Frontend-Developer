@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-// import { fetchCapsules } from "./api"; // Adjust the path to api.js
 
 const Search = () => {
   const [capsules, setCapsules] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
-  const [serialNumber, setSerialNumber] = useState("");
+  const [serialStatus, setSerialStatus] = useState("");
   const [capsuleType, setCapsuleType] = useState("");
-  const [missionName, setMissionName] = useState("");
+  const [original_launch, setOriginal_launch] = useState("");
 
   useEffect(() => {
     fetch("Capsules.json")
@@ -19,12 +18,9 @@ const Search = () => {
 
     const filteredCapsules = capsules.filter((capsule) => {
       return (
-        (serialNumber === "" || capsule.capsule_serial === serialNumber) &&
+        (serialStatus === "" || capsule.status === serialStatus) &&
         (capsuleType === "" || capsule.type === capsuleType) &&
-        (missionName === "" ||
-          capsule.missions.some((mission) =>
-            mission.name.toLowerCase().includes(missionName.toLowerCase())
-          ))
+        (original_launch === "" || capsule.original_launch === original_launch)
       );
     });
 
@@ -41,16 +37,16 @@ const Search = () => {
           <div className="">
             <select
               className="select select-bordered w-full max-w-xs"
-              value={serialNumber}
-              onChange={(e) => setSerialNumber(e.target.value)}
+              value={serialStatus}
+              onChange={(e) => setSerialStatus(e.target.value)}
             >
-              <option value="">capsule_serial</option>
+              <option value="">capsule Status</option>
               {capsules.map((capsule) => (
                 <option
                   key={capsule.capsule_serial}
-                  value={capsule.capsule_serial}
+                  value={capsule.status}
                 >
-                  {capsule.capsule_serial}
+                  {capsule.status}
                 </option>
               ))}
             </select>
@@ -67,13 +63,13 @@ const Search = () => {
           <div>
             <input
               type="text"
-              placeholder="Search by Mission Name"
+              placeholder="Search by original_launch"
               className="input input-bordered w-full max-w-xs"
-              value={missionName}
-              onChange={(e) => setMissionName(e.target.value)}
+              value={original_launch}
+              onChange={(e) => setOriginal_launch(e.target.value)}
             />
           </div>
-          <div className="btn w-[325px] md:ml-[100px] lg:ml-[220px] sm:ml-[214px] bg-[#606060] text-white">
+          <div className="btn w-[325px] md:ml-[100px] lg:ml-[220px] sm:ml-[214px] bg-[#606060] text-white hover:bg-[#606060]">
             <input type="submit" value="SEARCH" />
           </div>
         </div>
@@ -90,6 +86,16 @@ const Search = () => {
             <p>Status: {capsule.status}</p>
             <p>Original_launch_unix: {capsule.original_launch_unix}</p>
             <p>Details: {capsule.details}</p>
+            <div className="mt-4">
+              <p className="font-semibold">Missions:</p>
+              <ul>
+                {capsule.missions.map((mission) => (
+                  <li key={mission.flight}>
+                    Name: {mission.name}, Flight: {mission.flight}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         ))}
       </div>

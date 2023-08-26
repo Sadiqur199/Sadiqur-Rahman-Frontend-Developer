@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "../../images/life@bsf-header-img.png";
+import image1 from "../../images/6C8488825-130802-slsphoto-hmed-0835a-files.webp";
 import "./banner.css";
 import { Link } from "react-router-dom";
 const Banner = () => {
@@ -7,7 +7,7 @@ const Banner = () => {
     <>
       <div className="hero min-h-screen bg-[#E4F3FF] banner">
         <div className="hero-content flex-col lg:flex-row-reverse sm:content-start">
-          <img src={image1} className=" shadow-3xl lg:mr-[0px] sm:mr-[200px]" />
+          <img src={image1} className=" shadow-3xl lg:mr-[0px] sm:mr-[300px] sm:mt-11 md:mt-0 w-[60%]" />
           <div className="sm:ml-[-368px] lg:ml-0">
             <h1 className="text-5xl font-bold">
               Live Your <br></br> Dream With Us
