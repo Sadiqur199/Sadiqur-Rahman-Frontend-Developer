@@ -69,7 +69,7 @@ const Search = () => {
               onChange={(e) => setOriginal_launch(e.target.value)}
             />
           </div>
-          <div className="btn w-[325px] md:ml-[100px] lg:ml-[220px] sm:ml-[214px] bg-[#606060] text-white hover:bg-[#606060]">
+          <div className="btn w-[325px] md:ml-[50px] lg:ml-[220px] ml-[40px] bg-[#606060] text-white hover:bg-[#606060]">
             <input type="submit" value="SEARCH" />
           </div>
         </div>

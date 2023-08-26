@@ -40,7 +40,7 @@ const Product = () => {
   };
 
   return (
-    <div className="container text-center p-10 bg-slate-50	">
+    <div className="container text-center p-0 md:p-10 bg-slate-50	">
       <h1 className="mt-16 mb-10 uppercase font-bold text-xl">All Capsules</h1>
       <MotionAnimate
           animation='fadeInUp'

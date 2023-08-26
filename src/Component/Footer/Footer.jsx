@@ -7,15 +7,15 @@ const Footer = () => {
   return (
     <>
       <footer className="footer mt-10 items-center sm:py-2 md:py-4 bg-[#E4F3FF] text-black">
-        <div className="items-center grid-flow-col">
+        <div className="items-center grid-flow-col pt-5 ml-5 md:ml-0">
           <img className="w-10 rounded-full" src={image1} alt="" />
         </div>
         <div>
-          <p className="text-center sm:ml-0 md:ml-[280px]">
+          <p className="text-center ml-5 md:ml-[280px]">
             Copyright © 2023 - MD : Sadiqur Rahman &#x1F499;
           </p>
         </div>
-        <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end sm:mr-0 md:mr-10">
+        <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end ml-5 md:ml-0 mr-0 md:mr-10 mb-10 sm:mb-0">
           <div>
             <Link to="https://github.com/Sadiqur199" target="_blank">
               <BsGithub className="w-5 h-5"></BsGithub>
